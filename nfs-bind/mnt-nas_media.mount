@@ -1,0 +1,14 @@
+[Unit]
+Description = NAS Media NFS
+After=network-online.target
+Wants=network-online.target
+
+[Mount]
+What=<server_ip>:/<export_path>
+Where=/mnt/nas_media
+Type=nfs
+Options=ro,_netdev,auto,hard,intr,nodev,nosuid,vers=4.1,rsize=1048576,wsize=1048576,timeo=14,retrans=2,async
+TimeoutSec=5
+
+[Install]
+WantedBy=multi-user.target
