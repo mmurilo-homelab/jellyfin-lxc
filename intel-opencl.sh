@@ -3,7 +3,7 @@
 repo1="intel/compute-runtime"
 repo2="intel/intel-graphics-compiler"
 
-# dependency
+# dependencies
 apt install -y jq ocl-icd-libopencl1 vainfo intel-media-va-driver
 
 download_files() {

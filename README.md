@@ -9,7 +9,7 @@ as root:
 ```bash
 apt install curl
 cd /tmp
-curl https:// | bash
+curl https://raw.githubusercontent.com/mmurilo-homelab/jellyfin-lxc/refs/heads/main/intel-opencl.sh | bash
 ```
 
 ## Install jellyfin
