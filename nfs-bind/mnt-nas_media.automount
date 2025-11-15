@@ -1,0 +1,9 @@
+[Unit]
+Description=NAS NFS Media Automount
+
+[Automount]
+Where=/mnt/nas_media
+TimeoutIdleSec=6000
+
+[Install]
+WantedBy=multi-user.target
